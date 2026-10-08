@@ -1,0 +1,5 @@
+# 本番ドメインに差し替えること
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml

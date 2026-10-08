@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>浜松の完全予約制サウナ｜KUU SAUNA｜貸切・90分・1枠最大4名</title>
+<meta name="description" content="静岡県浜松市の完全予約制サウナ KUU SAUNA。1枠最大4名だからサウナ待ちも席取りもありません。セルフロウリュ、深さ110cmの水風呂、屋外の外気浴、ドリンク飲み放題、タオルまで込みで90分4,980円から。">
+
+<link rel="canonical" href="https://example.com/">
+<meta name="theme-color" content="#14201d">
+
+<!-- ファビコン一式。GitHub Pages のサブパス配信でも壊れないよう相対パス -->
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- ============================================================
+     Google Search Console の所有権確認
+     DNSかGTMで確認する場合は、この枠ごと消してよい。詳細は SEO.md。
+     ============================================================ -->
+<!-- <meta name="google-site-verification" content="ここに検証コード"> -->
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KUU SAUNA">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:title" content="浜松の完全予約制サウナ｜KUU SAUNA">
+<meta property="og:description" content="1枠最大4名。サウナ、水風呂、外気浴、ドリンクまで込みで90分4,980円から。手ぶらで来て、整って帰る。">
+<meta property="og:image" content="https://example.com/images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="曇り空と遠くの針葉樹林。KUU SAUNA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="浜松の完全予約制サウナ｜KUU SAUNA">
+<meta name="twitter:description" content="1枠最大4名。サウナ、水風呂、外気浴、ドリンクまで込みで90分4,980円から。">
+<meta name="twitter:image" content="https://example.com/images/ogp.jpg">
+
+<!-- LCPはヒーロー画像。webp非対応のブラウザは type 指定によりスキップする -->
+<link rel="preload" as="image" type="image/webp" media="(max-width:767px)"
+      href="images/hero-sp.webp"
+      imagesrcset="images/hero-sp@750.webp 750w, images/hero-sp.webp 1122w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/webp" media="(min-width:768px)"
+      href="images/hero-pc.webp"
+      imagesrcset="images/hero-pc@1024.webp 1024w, images/hero-pc.webp 1536w" imagesizes="100vw">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     Google Tag Manager
+     GTM-XXXXXXX を実際のコンテナIDに差し替えること。
+     GA4 と Microsoft Clarity は、コードに直接書かず
+     GTM のタグとして設定する（ANALYTICS.md 参照）。
+     ============================================================ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" href="style.css">
+<!-- 構造化データ。住所・電話・緯度経度・営業時間は仮の値。
+     本番ドメインと実データに差し替えること。
+     FAQは本文のQ&Aから生成しているので、本文を直したらここも合わせる。 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HealthAndBeautyBusiness",
+      "@id": "https://example.com/#business",
+      "name": "KUU SAUNA",
+      "url": "https://example.com/",
+      "image": "https://example.com/images/ogp.jpg",
+      "description": "静岡県浜松市の完全予約制サウナ。1枠最大4名で、サウナ・水風呂・外気浴・ドリンクを90分。",
+      "email": "hello@example.com",
+      "priceRange": "¥4,980〜¥16,800",
+      "currenciesAccepted": "JPY",
+      "paymentAccepted": "クレジットカード（Web予約時の事前決済のみ）",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "JP",
+        "addressRegion": "静岡県",
+        "addressLocality": "浜松市",
+        "streetAddress": "天竜区◯◯ 1234-5",
+        "postalCode": "431-0000"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.7108,
+        "longitude": 137.7261
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "10:00",
+          "closes": "21:00"
+        }
+      ],
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "フィンランド式サウナ（薪ストーブ・セルフロウリュ可・約90℃）",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "水風呂（約15℃・深さ110cm）",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "屋外の外気浴テラス（屋根なし）",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "シャワー2ブース（アメニティ付き）",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "男女別更衣室・鍵付きロッカー",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "ドリンク飲み放題（KUU DRINK BAR）",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "タオル・サウナハット貸出（料金込み）",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "駐車場（4台・無料）",
+          "value": true
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "STANDARD",
+          "price": "4980",
+          "priceCurrency": "JPY",
+          "description": "90分。1枠最大4名。サウナ・水風呂・外気浴・ドリンク飲み放題・タオル・アメニティ込み。",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "PRIVATE",
+          "price": "16800",
+          "priceCurrency": "JPY",
+          "description": "90分。1〜4名でスペースごと貸切。ほかのお客さまは入りません。",
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "maximumAttendeeCapacity": 4,
+      "hasMap": "https://maps.google.com/",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "空き枠を見る",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://example.com/reserve.html",
+          "inLanguage": "ja",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Reservation",
+          "name": "KUU SAUNA 90分のご予約"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://example.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "本当に手ぶらで行けますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "タオルセットとアメニティは料金に含まれています。着替えだけお持ちください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "サウナが初めてでも大丈夫ですか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "入り方の目安を書いたカードを受付でお渡しします。時間や回数の決まりはないので、つらくなる前に出てください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "予約はいつから取れますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "60日前から Web で受け付けています。事前決済のみです。当日枠も、空きがあれば Web から取れます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "キャンセルはできますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "前日23:59まで無料です。当日のキャンセルは50%、無連絡不参加は100%を申し受けます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "知らない人と一緒になりますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "STANDARD は1枠を最大4名で使うので、ほかのお客さまと居合わせることがあります。ただし枠を超えて人が増えることはないので、サウナ待ちや席取りは起きません。誰とも会いたくない日は PRIVATE をお選びください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2名でも PRIVATE を使えますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "使えます。PRIVATE は枠単位の料金なので、おひとりでも4名でも 16,800円からです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "子どもと一緒に入れますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "中学生以上からご利用いただけます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "タトゥーがあっても利用できますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ご利用いただけます。1枠最大4名で、大浴場のような場所ではありません。なお、暴力団その他反社会的勢力の方のご利用はお断りしています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "水着は必要ですか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "STANDARD は男女別の枠でご案内するので、水着は不要です。PRIVATE をグループでご利用の場合のみ、水着の着用をお願いしています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "生理中でも利用できますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ご利用いただけます。水風呂が気になる場合は、サウナと外気浴だけでも十分に過ごせます。ひとりで過ごしたい日は PRIVATE をお選びください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支払い方法を教えてください",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Web予約時のクレジットカード事前決済のみです。現地でのお支払いは発生しません。ドリンクもタオルも料金に含まれています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "何分前に着けばいいですか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "5分前で十分です。受付でタオルとアメニティをお渡しするだけなので、手続きはすぐ終わります。遅れて到着されても、枠の終了時刻は変わりません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "車以外で行けますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "バス停から徒歩8分です。浜松駅からタクシーでおよそ35分。お帰りのタクシーは受付でお呼びしますので、片道だけ手配しておけば大丈夫です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "飲みものや食べものを持ち込めますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "飲みものは KUU DRINK BAR をご利用ください。食べものの持ち込みはご遠慮いただいています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "たばこは吸えますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "敷地内はすべて禁煙です。喫煙スペースはありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "持病があっても大丈夫ですか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "心臓・血圧の疾患、妊娠中の方は、事前にかかりつけの医師にご相談ください。飲酒後のご利用はお断りしています。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com/#website",
+      "url": "https://example.com/",
+      "name": "KUU SAUNA",
+      "inLanguage": "ja",
+      "publisher": {
+        "@id": "https://example.com/#business"
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="head" id="head">
+  <a class="head__logo" href="#" aria-label="KUU SAUNA ホーム">KUU SAUNA</a>
+  <p class="head__info">完全予約制｜10:00–21:00｜火曜定休</p>
+  <nav class="head__nav" aria-label="メインナビゲーション">
+    <a href="#flow">90分</a>
+    <a href="#price">料金</a>
+    <a href="#guide">設備・質問</a>
+    <a href="#access">アクセス</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ ① HERO ============ -->
+<section class="panel panel--hero" id="hero">
+  <picture class="panel__img">
+    <source media="(min-width:768px)" type="image/webp"
+            srcset="images/hero-pc@1024.webp 1024w, images/hero-pc.webp 1536w" sizes="100vw">
+    <source media="(min-width:768px)"
+            srcset="images/hero-pc@1024.jpg 1024w, images/hero-pc.jpg 1536w" sizes="100vw">
+    <source type="image/webp" srcset="images/hero-sp@750.webp 750w, images/hero-sp.webp 1122w" sizes="100vw">
+    <img src="images/hero-sp.jpg"
+         srcset="images/hero-sp@750.jpg 750w, images/hero-sp.jpg 1122w"
+         sizes="100vw"
+         width="1122" height="1402"
+         alt="霧のかかった針葉樹の林と、その上に広がる曇り空"
+         fetchpriority="high" decoding="async">
+  </picture>
+
+  <div class="panel__body">
+    <p class="hero__brand">KUU SAUNA</p>
+    <h1 class="hero__copy">何もしない時間を、<br>取り戻す。</h1>
+    <p class="hero__sub">木の香りと、蒸気と、水。<br>人混みから少し離れて過ごす、完全予約制の90分。</p>
+
+    <ul class="facts" aria-label="基本情報">
+      <li><span class="facts__v">90<i>分</i></span><span class="facts__l">1枠の長さ</span></li>
+      <li><span class="facts__v">4<i>名</i></span><span class="facts__l">1枠の上限</span></li>
+      <li><span class="facts__v">4,980<i>円〜</i></span><span class="facts__l">ひとりあたり</span></li>
+      <li><span class="facts__v facts__v--w">完全予約制</span><span class="facts__l">待ち時間なし</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ③④⑤ 90分の3場面 ============ -->
+<div id="flow">
+
+<section class="panel" id="heat">
+  <picture class="panel__img">
+    <source type="image/webp" srcset="images/sauna@760.webp 760w, images/sauna@1100.webp 1100w, images/sauna.webp 1672w" sizes="100vw">
+    <img src="images/sauna.jpg"
+         srcset="images/sauna@760.jpg 760w, images/sauna@1100.jpg 1100w, images/sauna.jpg 1672w"
+         sizes="100vw"
+         width="1672" height="941"
+         alt="打ち放しコンクリートのサウナ室。右手に木のベンチ、左の隅に黒い薪ストーブとサウナストーンが置かれている"
+         loading="lazy" decoding="async">
+  </picture>
+  <div class="panel__body">
+    <p class="panel__time">00:10</p>
+    <h2 class="panel__h">蒸す<span class="panel__en">Heat</span></h2>
+    <p class="panel__lead">フィンランド式のサウナ室。ロウリュは自分のペースで。蒸気の量も、次の一杯をかけるタイミングも、こちらでは決めていません。</p>
+    <ul class="panel__spec">
+      <li><span>室温</span>約90℃</li>
+      <li><span>ロウリュ</span>セルフ</li>
+      <li><span>定員</span>4名</li>
+    </ul>
+  </div>
+</section>
+
+<section class="panel" id="cold">
+  <picture class="panel__img">
+    <source type="image/webp" srcset="images/coldbath@760.webp 760w, images/coldbath@1100.webp 1100w, images/coldbath.webp 1672w" sizes="100vw">
+    <img src="images/coldbath.jpg"
+         srcset="images/coldbath@760.jpg 760w, images/coldbath@1100.jpg 1100w, images/coldbath.jpg 1672w"
+         sizes="100vw"
+         width="1672" height="941"
+         alt="打ち放しコンクリートの水風呂。縁まで満たされた暗い水面と、ふちに渡された一本の木の踏み段"
+         loading="lazy" decoding="async">
+  </picture>
+  <div class="panel__body">
+    <p class="panel__time">00:22</p>
+    <h2 class="panel__h">冷やす<span class="panel__en">Cold</span></h2>
+    <p class="panel__lead">肩まで沈める深さにしました。かがまなくていいぶん、呼吸に集中できます。息を吐ききると、頭のなかの音が一度止まります。</p>
+    <ul class="panel__spec">
+      <li><span>水温</span>約15℃</li>
+      <li><span>深さ</span>110cm</li>
+      <li><span>利用</span>ひとりずつ</li>
+    </ul>
+  </div>
+</section>
+
+<section class="panel" id="air">
+  <picture class="panel__img">
+    <source type="image/webp" srcset="images/outdoor@760.webp 760w, images/outdoor.webp 1242w" sizes="100vw">
+    <img src="images/outdoor.jpg"
+         srcset="images/outdoor@760.jpg 760w, images/outdoor.jpg 1242w"
+         sizes="100vw"
+         width="1242" height="699"
+         alt="雨に濡れたコンクリートの外気浴テラス。木のリクライニングチェアが置かれ、低い壁の向こうに針葉樹の林が見える"
+         loading="lazy" decoding="async">
+  </picture>
+  <div class="panel__body">
+    <p class="panel__time">00:26</p>
+    <h2 class="panel__h">外に出る<span class="panel__en">Open air</span></h2>
+    <p class="panel__lead">屋根はかけていません。木に囲まれて、自然光と風と、木の音だけが入ってきます。いちばん長く過ごしてほしい時間です。</p>
+    <ul class="panel__spec">
+      <li><span>屋根</span>なし</li>
+      <li><span>チェア</span>4脚</li>
+      <li><span>広さ</span>屋外テラス</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<!-- ============ ⑥ そのほかの時間 ============ -->
+<section class="rest" id="rest">
+  <div class="wrap">
+    <h2 class="h2">のこりの時間。<span class="h2__en">The rest of the ninety minutes</span></h2>
+    <dl class="rest__list">
+      <div>
+        <dt><span class="rest__t">00:00</span>着く</dt>
+        <dd>手ぶらで来てください。タオルセットとアメニティをお渡しします。着替えたら、もう予定はありません。</dd>
+      </div>
+      <div>
+        <dt><span class="rest__t">00:40</span>くりかえす</dt>
+        <dd>2巡目、3巡目。回数も間隔も、こちらでは決めていません。つらくなる前に出てください。</dd>
+      </div>
+      <div>
+        <dt><span class="rest__t">01:30</span>帰る</dt>
+        <dd>ドリンクは滞在中ずっと飲み放題です。一杯飲んで、そのまま。買い足すものも、精算するものもありません。</dd>
+      </div>
+    </dl>
+    <p class="rest__drink"><span>KUU DRINK BAR</span>ミネラルウォーター／炭酸水／オロポ／レモンスカッシュ／ノンカフェインティー／デカフェコーヒー／季節のドリンク</p>
+  </div>
+</section>
+
+<!-- ============ ⑦ 料金 ============ -->
+<section class="price" id="price">
+  <div class="wrap">
+    <h2 class="h2">料金。<span class="h2__en">Price</span></h2>
+    <p class="lead">表示のほかに、かかるものはありません。<br>ひとりで過ごしたい日は PRIVATE を選んでください。</p>
+
+    <div class="plans">
+      <article class="plan">
+        <h3 class="plan__n">STANDARD</h3>
+        <p class="plan__p"><span class="plan__num">4,980</span><span class="plan__u">円 / 人</span></p>
+        <p class="plan__note">90分／同じ枠に、ほかのお客さまが入ることがあります（最大4名）</p>
+        <ul class="incl">
+          <li>サウナ（セルフロウリュ）</li>
+          <li>水風呂</li>
+          <li>外気浴</li>
+          <li>KUU DRINK BAR 飲み放題</li>
+          <li>タオルセット</li>
+          <li>基本アメニティ</li>
+        </ul>
+        <p class="plan__go"><a href="reserve.html?plan=standard" data-cta="plan_standard">この枠の空きを見る</a></p>
+      </article>
+
+      <article class="plan">
+        <h3 class="plan__n">PRIVATE</h3>
+        <p class="plan__p"><span class="plan__num">16,800</span><span class="plan__u">円 / 枠から</span></p>
+        <p class="plan__note">90分／1〜4名でスペースごと貸切。ほかのお客さまは入りません</p>
+        <ul class="incl">
+          <li>STANDARD の内容すべて</li>
+          <li>スペースごと貸切</li>
+          <li>知らない人と居合わせません</li>
+        </ul>
+        <p class="plan__go"><a href="reserve.html?plan=private" data-cta="plan_private">貸切の空きを見る</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑧ 設備 ＋ よくある質問 ============ -->
+<!-- 温度・深さ・ブース数は仮の値。実データに差し替えること。 -->
+<section class="guide" id="guide">
+  <div class="wrap">
+    <h2 class="h2">設備について。<span class="h2__en">Facilities</span></h2>
+    <p class="lead">温度と、広さと、置いてあるもの。</p>
+    <dl class="spec">
+      <div><dt>サウナ室</dt><dd>フィンランド式・薪ストーブ／セルフロウリュ可<br>室温 約90℃／定員4名</dd></div>
+      <div><dt>水風呂</dt><dd>水温 約15℃／深さ 110cm<br>肩まで沈めます</dd></div>
+      <div><dt>外気浴</dt><dd>屋外テラス（屋根なし）／チェア4脚</dd></div>
+      <div><dt>シャワー</dt><dd>2ブース／シャンプー・コンディショナー・ボディソープ</dd></div>
+      <div><dt>更衣室</dt><dd>男女別／鍵付きロッカー／ドライヤー</dd></div>
+      <div><dt>貸出品</dt><dd>バスタオル・フェイスタオル・サウナハット<br><span class="s">すべて料金に含まれます</span></dd></div>
+      <div><dt>定員</dt><dd>1枠 最大4名／PRIVATE は1〜4名で貸切</dd></div>
+    </dl>
+
+    <h2 class="h2 h2--gap">よくある質問。<span class="h2__en">Questions</span></h2>
+    <div class="qa">
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa1">本当に手ぶらで行けますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa1"><p>タオルセットとアメニティは料金に含まれています。着替えだけお持ちください。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa2">サウナが初めてでも大丈夫ですか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa2"><p>入り方の目安を書いたカードを受付でお渡しします。時間や回数の決まりはないので、つらくなる前に出てください。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa3">予約はいつから取れますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa3"><p>60日前から Web で受け付けています。事前決済のみです。当日枠も、空きがあれば Web から取れます。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa4">キャンセルはできますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa4"><p>前日23:59まで無料です。当日のキャンセルは50%、無連絡不参加は100%を申し受けます。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa5">知らない人と一緒になりますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa5"><p>STANDARD は1枠を最大4名で使うので、ほかのお客さまと居合わせることがあります。ただし枠を超えて人が増えることはないので、サウナ待ちや席取りは起きません。誰とも会いたくない日は PRIVATE をお選びください。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa6">2名でも PRIVATE を使えますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa6"><p>使えます。PRIVATE は枠単位の料金なので、おひとりでも4名でも 16,800円からです。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa7">子どもと一緒に入れますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa7"><p>中学生以上からご利用いただけます。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa8">タトゥーがあっても利用できますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa8"><p>ご利用いただけます。1枠最大4名で、大浴場のような場所ではありません。なお、暴力団その他反社会的勢力の方のご利用はお断りしています。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa9">水着は必要ですか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa9"><p>STANDARD は男女別の枠でご案内するので、水着は不要です。PRIVATE をグループでご利用の場合のみ、水着の着用をお願いしています。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa10">生理中でも利用できますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa10"><p>ご利用いただけます。水風呂が気になる場合は、サウナと外気浴だけでも十分に過ごせます。ひとりで過ごしたい日は PRIVATE をお選びください。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa11">支払い方法を教えてください<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa11"><p>Web予約時のクレジットカード事前決済のみです。現地でのお支払いは発生しません。ドリンクもタオルも料金に含まれています。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa12">何分前に着けばいいですか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa12"><p>5分前で十分です。受付でタオルとアメニティをお渡しするだけなので、手続きはすぐ終わります。遅れて到着されても、枠の終了時刻は変わりません。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa13">車以外で行けますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa13"><p>バス停から徒歩8分です。浜松駅からタクシーでおよそ35分。お帰りのタクシーは受付でお呼びしますので、片道だけ手配しておけば大丈夫です。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa14">飲みものや食べものを持ち込めますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa14"><p>飲みものは KUU DRINK BAR をご利用ください。食べものの持ち込みはご遠慮いただいています。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa15">たばこは吸えますか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa15"><p>敷地内はすべて禁煙です。喫煙スペースはありません。</p></div>
+      </div>
+      <div class="q">
+        <button type="button" class="q__btn" aria-expanded="false" aria-controls="qa16">持病があっても大丈夫ですか<span class="q__i" aria-hidden="true"></span></button>
+        <div class="q__a" id="qa16"><p>心臓・血圧の疾患、妊娠中の方は、事前にかかりつけの医師にご相談ください。飲酒後のご利用はお断りしています。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑨ アクセス ＋ 予約 ============ -->
+<section class="access" id="access">
+  <picture class="access__img">
+    <source type="image/webp" srcset="images/exterior@900.webp 900w, images/exterior.webp 1472w" sizes="100vw">
+    <img src="images/exterior.jpg"
+         srcset="images/exterior@900.jpg 900w, images/exterior.jpg 1472w"
+         sizes="100vw"
+         width="1472" height="828"
+         alt="針葉樹の林を背にした、打ち放しコンクリートの平屋。中央に細い入口があり、右の壁にKUU SAUNAと記したステンレスのプレートが付いている"
+         loading="lazy" decoding="async">
+  </picture>
+
+  <div class="wrap">
+    <h2 class="h2">予定を、ひとつ空けてください。<span class="h2__en">Leave one space in your schedule</span></h2>
+    <p class="lead">Web予約・事前決済。当日は着替えだけ持って来てください。<br>前日23:59までのキャンセルは無料です。</p>
+    <!-- 直近の空き枠。slots.js から自動で入る -->
+    <div class="next" id="nextSlots"></div>
+
+    <a class="btn btn--line btn--lg" href="reserve.html" data-cta="reserve_section">空き枠を見る</a>
+
+    <!-- 住所・IC名・バス停・所要時間はすべて仮。実データに差し替えること。 -->
+    <dl class="info">
+      <div><dt>所在地</dt><dd>〒431-0000　静岡県浜松市天竜区◯◯ 1234-5<br><a href="https://maps.google.com/" target="_blank" rel="noopener">Googleマップで開く</a></dd></div>
+      <div><dt>車でお越しの方</dt><dd>浜松駅から約40分／新東名「浜松浜北IC」から約15分<br><span class="s">◯◯街道を北へ、◯◯橋を渡って2つ目の信号を左折。看板は小さいので、林のなかのコンクリートの平屋が目印です。</span></dd></div>
+      <div><dt>電車・バスでお越しの方</dt><dd>遠州鉄道「◯◯駅」からバス15分、「◯◯」下車 徒歩8分<br><span class="s">浜松駅からタクシーで約35分。お帰りのタクシーは受付でお呼びします。</span></dd></div>
+      <div><dt>駐車場</dt><dd>4台・無料<br><span class="s">1枠4名までなので、満車になることはありません。</span></dd></div>
+      <div><dt>営業時間</dt><dd>10:00 – 21:00（最終枠 19:30）</dd></div>
+      <div><dt>定休日</dt><dd>火曜</dd></div>
+      <div><dt>お支払い</dt><dd>Web予約時のクレジットカード事前決済のみ<br><span class="s">現地でのお支払いはありません。</span></dd></div>
+      <div><dt>お問い合わせ</dt><dd><a href="mailto:hello@example.com" data-cta="email">hello@example.com</a><br><span class="s">1営業日以内に返信します。</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__logo">KUU SAUNA</p>
+    <p class="foot__about">静岡県浜松市の完全予約制サウナ。1枠最大4名で、フィンランド式サウナ・水風呂・屋外の外気浴・ドリンク飲み放題を90分。タオルとアメニティ込みで4,980円から、貸切プランもあります。</p>
+    <nav class="foot__nav" aria-label="フッターナビゲーション">
+      <a href="#flow">90分</a>
+      <a href="#price">料金</a>
+      <a href="#guide">設備・質問</a>
+      <a href="#access">アクセス</a>
+    </nav>
+    <dl class="foot__credit">
+      <dt>企画・運営</dt><dd>KUU SAUNA</dd>
+      <dt>ウェブサイト</dt><dd>エスズラボ</dd>
+      <dt>写真</dt><dd>—</dd>
+    </dl>
+    <p class="foot__c">&copy; 2026 KUU SAUNA</p>
+  </div>
+</footer>
+
+<div class="bookbar">
+  <p class="bookbar__info"><span>完全予約制</span>90分 4,980円〜</p>
+  <a class="bookbar__btn" href="reserve.html" data-cta="bookbar">空き枠を見る</a>
+</div>
+
+<script src="slots.js"></script>
+<script src="schedule.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

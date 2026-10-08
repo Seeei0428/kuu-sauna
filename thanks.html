@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ご予約ありがとうございます｜KUU SAUNA</title>
+<!-- 予約を終えた人だけが見るページなので検索結果には出さない。
+     ただし follow は残す。nofollow にすると、このページから
+     LP・空き枠ページへのリンク評価が伝わらなくなる -->
+<meta name="robots" content="noindex, follow">
+<meta name="description" content="KUU SAUNA のご予約ありがとうございます。当日の持ちもの、到着時刻、道順、変更・キャンセルのご案内です。">
+<meta name="theme-color" content="#14201d">
+
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     Google Tag Manager
+     GTM-XXXXXXX を実際のコンテナIDに差し替えること。
+     GA4 と Microsoft Clarity は、コードに直接書かず
+     GTM のタグとして設定する（ANALYTICS.md 参照）。
+     ============================================================ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="head is-stuck" id="head">
+  <a class="head__logo" href="index.html" aria-label="KUU SAUNA ホーム">KUU SAUNA</a>
+  <p class="head__info">完全予約制｜10:00–21:00｜火曜定休</p>
+  <nav class="head__nav" aria-label="メインナビゲーション">
+    <a href="index.html#flow">90分</a>
+    <a href="index.html#price">料金</a>
+    <a href="index.html#guide">設備・質問</a>
+    <a href="index.html#access">アクセス</a>
+  </nav>
+</header>
+
+<main id="main" class="rv tx">
+  <div class="wrap">
+
+    <ol class="steps" aria-label="お手続きの進み方">
+      <li class="steps__i is-done"><span>1</span>枠を選ぶ</li>
+      <li class="steps__i is-done"><span>2</span>内容を入力</li>
+      <li class="steps__i is-done"><span>3</span>お支払い</li>
+      <li class="steps__i is-now"><span>4</span>完了</li>
+    </ol>
+
+    <h1 class="h2">ご予約、承りました。<span class="h2__en">Reserved</span></h1>
+    <p class="lead" id="txLead">この画面が、ご予約の控えです。</p>
+
+    <!-- 予約内容。予約システムから日時を渡せた場合だけ出る -->
+    <div class="tx__slot" id="txSlot" hidden>
+      <p class="tx__label">ご予約の枠</p>
+      <p class="tx__when" id="txWhen"></p>
+      <p class="tx__plan" id="txPlan"></p>
+      <p class="tx__meta" id="txMeta" hidden></p>
+      <p class="tx__keep" id="txKeep" hidden>この画面をブックマークしておくと、あとから開き直せます。</p>
+    </div>
+
+    <section class="tx__sec">
+      <h2 class="h2 h2--sm">当日までに。<span class="h2__en">Before you come</span></h2>
+      <dl class="rv__policy">
+        <div>
+          <dt>持ちもの</dt>
+          <dd>着替えだけお持ちください。<br><span class="s">バスタオル・フェイスタオル・サウナハット・シャンプー類は料金に含まれています。</span></dd>
+        </div>
+        <div>
+          <dt>到着</dt>
+          <dd>開始の5分前にお越しください。<br><span class="s">遅れて到着された場合も、枠の終了時刻は変わりません。</span></dd>
+        </div>
+        <div>
+          <dt>お支払い</dt>
+          <dd>ご予約時にお済みです。現地でのお支払いはありません。</dd>
+        </div>
+        <div>
+          <dt>ご注意</dt>
+          <dd>飲酒後のご利用はお断りしています。<br><span class="s">心臓・血圧の疾患、妊娠中の方は、事前にかかりつけの医師にご相談ください。</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- 住所はここで出す。予約が確定した人に必要な情報なので -->
+    <section class="tx__sec">
+      <h2 class="h2 h2--sm">道順。<span class="h2__en">Getting here</span></h2>
+      <!-- 住所・IC名・バス停・所要時間はすべて仮。実データに差し替えること。 -->
+      <dl class="rv__policy">
+        <div>
+          <dt>所在地</dt>
+          <dd>〒431-0000　静岡県浜松市天竜区◯◯ 1234-5<br>
+            <a href="https://maps.google.com/" target="_blank" rel="noopener">Googleマップで開く</a></dd>
+        </div>
+        <div>
+          <dt>お車</dt>
+          <dd>浜松駅から約40分／新東名「浜松浜北IC」から約15分<br>
+            <span class="s">◯◯街道を北へ、◯◯橋を渡って2つ目の信号を左折。看板は小さいので、林のなかのコンクリートの平屋が目印です。駐車場は4台・無料です。</span></dd>
+        </div>
+        <div>
+          <dt>電車・バス</dt>
+          <dd>遠州鉄道「◯◯駅」からバス15分、「◯◯」下車 徒歩8分<br>
+            <span class="s">浜松駅からタクシーで約35分。お帰りのタクシーは受付でお呼びします。</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="tx__sec">
+      <h2 class="h2 h2--sm">変更・キャンセル。<span class="h2__en">Changes</span></h2>
+      <dl class="rv__policy">
+        <div><dt>キャンセル</dt><dd>前日23:59まで無料／当日50%／無連絡不参加100%</dd></div>
+        <div><dt>変更</dt><dd>前日23:59まで、空きがあれば別の枠へ振り替えできます</dd></div>
+        <div><dt>ご連絡先</dt><dd><a href="mailto:hello@example.com" data-cta="email">hello@example.com</a><br><span class="s">1営業日以内に返信します。</span></dd></div>
+      </dl>
+    </section>
+
+    <p class="tx__back">
+      <a href="index.html">KUU SAUNA について</a>
+      <a href="reserve.html">別の枠も見る</a>
+    </p>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__logo">KUU SAUNA</p>
+    <p class="foot__about">静岡県浜松市の完全予約制サウナ。1枠最大4名で、フィンランド式サウナ・水風呂・屋外の外気浴・ドリンク飲み放題を90分。タオルとアメニティ込みで4,980円から、貸切プランもあります。</p>
+    <nav class="foot__nav" aria-label="フッターナビゲーション">
+      <a href="index.html#flow">90分</a>
+      <a href="index.html#price">料金</a>
+      <a href="index.html#guide">設備・質問</a>
+      <a href="index.html#access">アクセス</a>
+      <a href="reserve.html">空き枠</a>
+    </nav>
+    <dl class="foot__credit">
+      <dt>企画・運営</dt><dd>KUU SAUNA</dd>
+      <dt>ウェブサイト</dt><dd>エスズラボ</dd>
+      <dt>写真</dt><dd>—</dd>
+    </dl>
+    <p class="foot__c">&copy; 2026 KUU SAUNA</p>
+  </div>
+</footer>
+
+<script src="slots.js"></script>
+<script src="main.js"></script>
+<script src="thanks.js"></script>
+</body>
+</html>

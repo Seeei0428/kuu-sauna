@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お申し込み内容の入力｜KUU SAUNA</title>
+<meta name="description" content="KUU SAUNA のお申し込み。人数とご連絡先をご入力ください。お支払いはこのあと決済ページで行います。">
+<!-- 入力途中のページなので、検索結果には出さない -->
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#14201d">
+
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     Google Tag Manager
+     GTM-XXXXXXX を実際のコンテナIDに差し替えること。
+     GA4 と Microsoft Clarity は、コードに直接書かず
+     GTM のタグとして設定する（ANALYTICS.md 参照）。
+     ============================================================ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="head is-stuck" id="head">
+  <a class="head__logo" href="index.html" aria-label="KUU SAUNA ホーム">KUU SAUNA</a>
+  <p class="head__info">完全予約制｜10:00–21:00｜火曜定休</p>
+  <nav class="head__nav" aria-label="メインナビゲーション">
+    <a href="index.html#flow">90分</a>
+    <a href="index.html#price">料金</a>
+    <a href="index.html#guide">設備・質問</a>
+    <a href="index.html#access">アクセス</a>
+  </nav>
+</header>
+
+<main id="main" class="rv bk">
+  <div class="wrap">
+
+    <!-- どこまで進んだか -->
+    <ol class="steps" aria-label="お手続きの進み方">
+      <li class="steps__i is-done"><span>1</span>枠を選ぶ</li>
+      <li class="steps__i is-now" id="stepEnter"><span>2</span>内容を入力</li>
+      <li class="steps__i" id="stepPay"><span>3</span>お支払い</li>
+      <li class="steps__i"><span>4</span>完了</li>
+    </ol>
+
+    <h1 class="h2" id="bkTitle">お申し込み内容。<span class="h2__en">Your details</span></h1>
+
+    <!-- 枠が指定されていないとき -->
+    <div id="bkNoSlot" hidden>
+      <p class="lead">枠が選ばれていません。<br>空き枠のページから、ご希望の時間をお選びください。</p>
+      <p class="tx__back"><a href="reserve.html">空き枠を見る</a></p>
+    </div>
+
+    <div id="bkMain" hidden>
+
+      <!-- 選んだ枠 -->
+      <div class="bk__slot">
+        <p class="tx__label">ご希望の枠</p>
+        <p class="tx__when" id="bkWhen"></p>
+        <p class="tx__plan" id="bkPlan"></p>
+        <p class="bk__change"><a href="#" id="bkChange">枠を選びなおす</a></p>
+      </div>
+
+      <!-- ① 入力 -->
+      <form id="bkForm" novalidate>
+        <div class="fld" id="fldQty">
+          <label class="fld__l" for="qty">ご利用人数<span class="fld__req">必須</span></label>
+          <select class="fld__c" id="qty" name="qty" required></select>
+          <p class="fld__h" id="qtyHelp"></p>
+        </div>
+
+        <div class="fld">
+          <label class="fld__l" for="name">お名前<span class="fld__req">必須</span></label>
+          <input class="fld__c" type="text" id="name" name="name" autocomplete="name" required>
+          <p class="fld__e" hidden>お名前をご入力ください。</p>
+        </div>
+
+        <div class="fld">
+          <label class="fld__l" for="kana">ふりがな</label>
+          <input class="fld__c" type="text" id="kana" name="kana" autocomplete="off">
+        </div>
+
+        <div class="fld">
+          <label class="fld__l" for="email">メールアドレス<span class="fld__req">必須</span></label>
+          <input class="fld__c" type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+          <p class="fld__h">休業など、やむを得ない場合のご連絡に使います。</p>
+          <p class="fld__e" hidden>メールアドレスをご確認ください。</p>
+        </div>
+
+        <div class="fld">
+          <label class="fld__l" for="tel">電話番号<span class="fld__req">必須</span></label>
+          <input class="fld__c" type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" required>
+          <p class="fld__h">当日ご連絡がつく番号をご入力ください。</p>
+          <p class="fld__e" hidden>電話番号をご確認ください。</p>
+        </div>
+
+        <div class="fld">
+          <span class="fld__l" id="firstLabel">サウナのご利用は</span>
+          <div class="fld__radios" role="radiogroup" aria-labelledby="firstLabel">
+            <label class="rad"><input type="radio" name="first" value="はじめて"><span>はじめて</span></label>
+            <label class="rad"><input type="radio" name="first" value="慣れている" checked><span>慣れている</span></label>
+          </div>
+          <p class="fld__h">はじめての方には、入り方を書いたカードをお渡しします。</p>
+        </div>
+
+        <div class="fld">
+          <label class="fld__l" for="note">ご要望など</label>
+          <textarea class="fld__c" id="note" name="note" rows="3"></textarea>
+        </div>
+
+        <!-- 合計 -->
+        <div class="bk__total">
+          <dl>
+            <div><dt id="totalUnit"></dt><dd id="totalCalc"></dd></div>
+            <div class="bk__sum"><dt>お支払い金額</dt><dd><span id="totalYen"></span></dd></div>
+          </dl>
+          <p class="bk__tax">表示は税込です。このほかにかかる費用はありません。</p>
+        </div>
+
+        <div class="fld fld--agree">
+          <label class="chk">
+            <input type="checkbox" id="agree" name="agree" required>
+            <span>前日23:59まで無料、当日は50%、無連絡不参加は100%のキャンセル料がかかることに同意します。</span>
+          </label>
+          <p class="fld__e" hidden>キャンセル規定へのご同意が必要です。</p>
+        </div>
+
+        <p class="bk__priv">ご入力いただいた内容は、ご予約の確認とご連絡にのみ使用します。<br>
+          <span class="s">カード情報はこのページでは扱いません。次のお支払いページでご入力いただきます。</span></p>
+
+        <button type="submit" class="btn btn--line btn--lg">入力内容を確認する</button>
+      </form>
+
+      <!-- ② 確認 -->
+      <div id="bkConfirm" hidden>
+        <dl class="rv__policy" id="bkReview"></dl>
+
+        <div class="bk__total">
+          <dl><div class="bk__sum"><dt>お支払い金額</dt><dd><span id="totalYen2"></span></dd></div></dl>
+        </div>
+
+        <p class="bk__priv" id="payNote"></p>
+
+        <div class="bk__act">
+          <a class="btn btn--line btn--lg" id="bkPay" href="#">お支払いに進む</a>
+          <button type="button" class="bk__edit" id="bkBack">入力内容を修正する</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__logo">KUU SAUNA</p>
+    <p class="foot__about">静岡県浜松市の完全予約制サウナ。1枠最大4名で、フィンランド式サウナ・水風呂・屋外の外気浴・ドリンク飲み放題を90分。タオルとアメニティ込みで4,980円から、貸切プランもあります。</p>
+    <nav class="foot__nav" aria-label="フッターナビゲーション">
+      <a href="index.html#flow">90分</a>
+      <a href="index.html#price">料金</a>
+      <a href="index.html#guide">設備・質問</a>
+      <a href="index.html#access">アクセス</a>
+      <a href="reserve.html">空き枠</a>
+    </nav>
+    <dl class="foot__credit">
+      <dt>企画・運営</dt><dd>KUU SAUNA</dd>
+      <dt>ウェブサイト</dt><dd>エスズラボ</dd>
+      <dt>写真</dt><dd>—</dd>
+    </dl>
+    <p class="foot__c">&copy; 2026 KUU SAUNA</p>
+  </div>
+</footer>
+
+<script src="slots.js"></script>
+<script src="schedule.js"></script>
+<script src="main.js"></script>
+<script src="booking.js"></script>
+</body>
+</html>

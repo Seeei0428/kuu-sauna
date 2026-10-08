@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ページが見つかりません｜KUU SAUNA</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#14201d">
+
+<!-- ★ サイトのルート。ここだけ直せばリンクが全部つながる。
+     独自ドメインで公開するなら "/" のまま。
+     GitHub Pages のサブパス配信（user.github.io/リポジトリ名/）なら
+     "/リポジトリ名/" に変える。                                  -->
+<base href="index.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     Google Tag Manager
+     GTM-XXXXXXX を実際のコンテナIDに差し替えること。
+     GA4 と Microsoft Clarity は、コードに直接書かず
+     GTM のタグとして設定する（ANALYTICS.md 参照）。
+     ============================================================ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<!-- ============================================================
+     404 は「/foo/bar/存在しないページ」のような、どの深さのURLでも
+     返される。相対パスだとそのURLを基準に探してしまい、
+     絶対パスだと GitHub Pages のサブパス配信で外れる。
+     どちらも当たらないので、このページだけCSSを埋め込んで自己完結させる。
+     ============================================================ -->
+<style>
+:root{
+  --night:#14201d; --cedar:#2f4038; --moss:#7d8f78;
+  --paper:#eae9e5; --ember:#5a4330; --ink:#14201d; --ink-2:#4c5a5c;
+  --on-dark:#e8eae6;
+  --f-min:'Zen Old Mincho',serif;
+  --f-go:'Zen Kaku Gothic New',sans-serif;
+  --f-en:'Jost',sans-serif;
+  --gut:1.5rem;
+}
+*,*::before,*::after{box-sizing:border-box;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-go);font-weight:300;font-size:1rem;
+  line-height:2;letter-spacing:.045em;-webkit-font-smoothing:antialiased;
+}
+h1,h2,p,dl,dd{margin:0;}
+ul,nav{margin:0;padding:0;list-style:none;}
+a{color:inherit;text-decoration:none;}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px;}
+.wrap{width:100%;max-width:40rem;margin-inline:auto;padding-inline:var(--gut);}
+.head{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;min-height:3.75rem;padding:.7rem var(--gut);
+  background:rgba(234,233,229,.9);box-shadow:0 1px 0 rgba(20,32,29,.09);
+}
+.head__logo{font-family:var(--f-en);font-size:.8rem;letter-spacing:.4em;text-indent:.4em;white-space:nowrap;}
+.head__info{font-size:.62rem;letter-spacing:.08em;line-height:1.5;text-align:right;opacity:.85;}
+main{padding:clamp(3rem,10vw,5rem) 0 clamp(4rem,12vw,7rem);}
+.h2{
+  font-family:var(--f-min);font-weight:500;
+  font-size:clamp(1.45rem,5.8vw,2rem);line-height:1.8;
+  letter-spacing:.07em;margin-bottom:.8rem;
+}
+.h2--sm{font-size:clamp(1.25rem,5vw,1.6rem);}
+.h2__en{
+  display:block;font-family:var(--f-en);font-weight:300;
+  font-size:.66rem;letter-spacing:.26em;text-indent:.26em;
+  color:var(--moss);margin-top:.9rem;
+}
+.lead{font-size:.88rem;line-height:2;color:var(--ink-2);margin-bottom:2.6rem;}
+.s{font-size:.8rem;opacity:.85;}
+.links{display:flex;flex-wrap:wrap;gap:.6rem 2rem;padding-top:.5rem;}
+.links a{
+  display:inline-flex;align-items:center;min-height:2.75rem;
+  font-size:.84rem;letter-spacing:.08em;color:var(--ember);
+  box-shadow:inset 0 -1px 0 rgba(90,67,48,.45);
+}
+.sec{margin-top:clamp(3rem,9vw,4.5rem);}
+.info{border-top:1px solid rgba(20,32,29,.16);}
+.info>div{padding-block:1rem;border-bottom:1px solid rgba(20,32,29,.1);}
+.info dt{font-size:.7rem;letter-spacing:.14em;color:var(--cedar);margin-bottom:.3rem;}
+.info dd{margin:0;font-size:.88rem;line-height:1.9;color:var(--ink-2);}
+.info dd a{box-shadow:inset 0 -1px 0 rgba(90,67,48,.5);}
+.foot{background:var(--night);color:rgba(232,234,230,.7);padding:4rem 0 3rem;}
+.foot__logo{
+  font-family:var(--f-en);font-size:.84rem;letter-spacing:.44em;
+  text-indent:.44em;color:var(--on-dark);margin-bottom:1.4rem;
+}
+.foot__about{font-size:.82rem;line-height:2.05;max-width:34rem;opacity:.75;margin-bottom:2rem;}
+.foot__nav{display:flex;flex-wrap:wrap;gap:.1rem 1.8rem;font-size:.84rem;margin-bottom:1.6rem;}
+.foot__nav a{display:inline-flex;align-items:center;min-height:2.75rem;opacity:.8;}
+.foot__c{font-family:var(--f-en);font-size:.68rem;letter-spacing:.16em;opacity:.45;}
+@media (min-width:768px){
+  :root{--gut:2.5rem;}
+  .wrap{max-width:46rem;}
+  .info>div{display:grid;grid-template-columns:9rem 1fr;gap:1.5rem;align-items:baseline;padding-block:1.2rem;}
+  .info dt{margin-bottom:0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="head is-stuck" id="head">
+  <a class="head__logo" href="index.html" aria-label="KUU SAUNA ホーム">KUU SAUNA</a>
+  <p class="head__info">完全予約制｜10:00–21:00｜火曜定休</p>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <h1 class="h2">このページはありません。<span class="h2__en">Page not found</span></h1>
+    <p class="lead">アドレスが変わったか、入力に誤りがあるようです。<br>お探しのものは、下のいずれかかもしれません。</p>
+
+    <p class="links">
+      <a href="index.html">KUU SAUNA について</a>
+      <a href="reserve.html">空き枠を見る</a>
+      <a href="index.html#guide">設備・よくある質問</a>
+      <a href="index.html#access">アクセス</a>
+    </p>
+
+    <section class="sec">
+      <h2 class="h2 h2--sm">お探しのものが見つからないとき。<span class="h2__en">Still lost</span></h2>
+      <dl class="info">
+        <div><dt>ご予約のこと</dt><dd>ご予約の確認・変更・キャンセルは、下記までご連絡ください。</dd></div>
+        <div><dt>お問い合わせ</dt><dd><a href="mailto:hello@example.com">hello@example.com</a><br><span class="s">1営業日以内に返信します。</span></dd></div>
+      </dl>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__logo">KUU SAUNA</p>
+    <p class="foot__about">静岡県浜松市の完全予約制サウナ。1枠最大4名で、フィンランド式サウナ・水風呂・屋外の外気浴・ドリンク飲み放題を90分。</p>
+    <nav class="foot__nav" aria-label="フッターナビゲーション">
+      <a href="index.html#flow">90分</a>
+      <a href="index.html#price">料金</a>
+      <a href="index.html#guide">設備・質問</a>
+      <a href="index.html#access">アクセス</a>
+      <a href="reserve.html">空き枠</a>
+    </nav>
+    <p class="foot__c">&copy; 2026 KUU SAUNA</p>
+  </div>
+</footer>
+
+<script>
+// どのURLで404になったかを記録する。リンク切れに気づくため
+(function () {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'page_not_found',
+    missing_path: location.pathname + location.search,
+    came_from: document.referrer || '(直接)'
+  });
+})();
+</script>
+</body>
+</html>
